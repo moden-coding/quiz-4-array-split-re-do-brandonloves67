@@ -61,10 +61,25 @@ public class App {
 
 
     public static int[] threeFromMiddle(int[] a){
-        return null;//placeholder
+         int[] result = new int[3];
+         int middle = a.length/2;
+      result[0]=a[middle-1];
+      result[1]=a[middle];
+      result[2]=a[middle+1];
+         return result;
     }
 
     public static int longerWord(String sentence, int size){
-        return -1; //placeholder
+    String[] words = sentence.split(" ");
+    int count = 0;
+    for (String i : words){
+   if (i.length()>size) {
+        count ++;
     }
+    }
+   return count;
+}
+
+
+
 }
